@@ -28,8 +28,8 @@ int op2(int a, int ope, int b){
         return a * b;
     else if(ope == 3 && a % b == 0 && b != 0)
         return a / b;
-    //    else if()
-    //        return a;
+    //else if()
+    //    return a;
     else if(ope == 4 && pow(a, b) < 500)
         return pow(a, b);
     return -99999;
@@ -63,7 +63,7 @@ string numToOp2(int ope){
     return "^";
 }
 
-// One operand operators
+//One operand operators
 string numToOp1(int num, int ope){
     if(ope == 0)
         return "";
@@ -101,15 +101,15 @@ bool permutateOp(int a, int b, int c, int d){
 
                                 //set total with two operand operators
                                 total = op2(op2(op2(op1a, n, op1b), o, op1c), p, op1d);
-                                //                                if(total == value){
-                                //                                    cout << "((" + to_string(a) + numToOp1(a, i) + " " + numToOp2(n) + " " + to_string(b) + numToOp1(b, j) + ") " + numToOp2(o) + " " + to_string(c) + numToOp1(c, l)  + ") " + numToOp2(p) + " " + to_string(d) + numToOp1(d, m) + " = 4\n";
-                                //                                    solutions++;
-                                ////                                    return true;
-                                //                                }
+                                //if(total == value){
+                                //    cout << "((" + to_string(a) + numToOp1(a, i) + " " + numToOp2(n) + " " + to_string(b) + numToOp1(b, j) + ") " + numToOp2(o) + " " + to_string(c) + numToOp1(c, l) + ") " + numToOp2(p) + " " + to_string(d) + numToOp1(d, m) + " = 4\n";
+                                //    solutions++;
+                                //    return true;
+                                //}
                                 if(total == value){
                                     cout << "((" + to_string(a) + numToOp1(a, i) + " " + numToOp2(n) + " " + to_string(b) + numToOp1(b, j) + ") " + numToOp2(o) + " " + to_string(c) + numToOp1(c, l) + ") " + numToOp2(p) + " " + to_string(d) + numToOp1(d, m) + " = " << value << "\n";
                                     solutions++;
-                                    //                                    return true;
+                                    //return true;
                                 }
                             }
                         }
